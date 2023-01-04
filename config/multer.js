@@ -10,9 +10,9 @@ const storage = multer.diskStorage({
 
     const originalName = file.originalname.split('.')[0]
 
-    const fileName = `${originalName}-${Date.now()}.${fileType}`
+    const filename = `${originalName}-${Date.now()}.${fileType}`
 
-    cb(null, fileName)
+    cb(null, filename)
   }
 })
 
